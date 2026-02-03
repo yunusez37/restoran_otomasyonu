@@ -2,7 +2,9 @@
 
 Bu proje, restoranlar için masa yönetimi, sipariş takibi ve hesap işlemlerini gerçekleştiren modern bir masaüstü uygulamasıdır. Python (PySide6) ve MSSQL veritabanı mimarisi kullanılarak geliştirilmiştir.
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=Uygulama+Ekran+Goruntusu+Buraya)
+![Proje Ekran Görüntüsü](<img width="669" height="853" alt="image" src="https://github.com/user-attachments/assets/25e1cef2-a299-4a3d-a707-025e5af7fb1d" />
+) (<img width="1918" height="979" alt="image" src="https://github.com/user-attachments/assets/d1064050-70ea-4837-8592-b669e336d453" />)
+
 
 ## Özellikler
 
@@ -18,4 +20,23 @@ Bu proje, restoranlar için masa yönetimi, sipariş takibi ve hesap işlemlerin
 * **Arayüz:** PySide6 (Qt)
 * **Veritabanı:** Microsoft SQL Server (MSSQL)
 * **Sürücü:** PyODBC
+
+  **Tabloları Oluşturma:**
+SQL Server'ı kurduktan sonra aşağıdaki sorguyu çalıştırarak gerekli veritabanı ve tabloyu oluşturun:
+
+```sql
+CREATE DATABASE RestoranDB;
+GO
+USE RestoranDB;
+GO
+CREATE TABLE siparisler (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    masa_no NVARCHAR(50),
+    yemek_adi NVARCHAR(100),
+    icecek_adi NVARCHAR(100),
+    fiyat_yemek DECIMAL(10,2),
+    fiyat_icecek DECIMAL(10,2),
+    toplam_tutar DECIMAL(10,2)
+);
+Aynı zamanda main.py dosyasında bulunan "SERVER_NAME = r'DESKTOP-XXXXXX\SQLEXPRESS'" kısmına kendi sunucu adınızı giriniz.
 
