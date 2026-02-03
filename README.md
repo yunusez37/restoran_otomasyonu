@@ -2,8 +2,22 @@
 
 Bu proje, restoranlar için masa yönetimi, sipariş takibi ve hesap işlemlerini gerçekleştiren modern bir masaüstü uygulamasıdır. Python (PySide6) ve MSSQL veritabanı mimarisi kullanılarak geliştirilmiştir.
 
-![Proje Ekran Görüntüsü](<img width="669" height="853" alt="image" src="https://github.com/user-attachments/assets/25e1cef2-a299-4a3d-a707-025e5af7fb1d" />
-) (<img width="1918" height="979" alt="image" src="https://github.com/user-attachments/assets/d1064050-70ea-4837-8592-b669e336d453" />)
+<div align="center">
+  <table>
+    <tr>
+      <td style="text-align: center">
+        <img src="https://github.com/user-attachments/assets/25e1cef2-a299-4a3d-a707-025e5af7fb1d" width="300" alt="Giriş Ekranı">
+        <br>
+        <em>Giriş Ekranı</em>
+      </td>
+      <td style="text-align: center">
+        <img src="https://github.com/user-attachments/assets/d1064050-70ea-4837-8592-b669e336d453" width="500" alt="Ana Arayüz">
+        <br>
+        <em>Ana Arayüz</em>
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 ## Özellikler
